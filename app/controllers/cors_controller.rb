@@ -15,6 +15,6 @@ class CorsController < ApplicationController
         end
     end
     headers['Vary'] = 'Origin'
-    render :text => '', :content_type => 'text/plain'
+    head 204
   end
 end
